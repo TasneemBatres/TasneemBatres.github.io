@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Nemo Cat Café</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-image: url("https://64.media.tumblr.com/1f62d5b6694d1c5103385b7f4408517a/acbb30617e91c570-ea/s640x960/94d8c493bb6f4a4b822b3985e8b1f6875d4d1223.jpg");
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+                background-image: url ("https://data.whicdn.com/images/337366800/original.jpg?t=1573740876");
+            }
+
+            /* navigation menu */
+            nav {
+                background: #271a0c;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                display: inline-block;
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: 'Noto Serif', serif;
+                font-size: 20px 
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: #62411e;
+                display: flex;
+                
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                color:  #b3b3b3; 
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+                font-family: 'Noto Serif', serif;
+                color: silver;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <!-- All content goes here -->
+         <div id="all-contents">
+            <nav>
+                <h1>Nemo Cat Café</h1>
+                 <ul id="nav-ul">
+                    <li class="nav-li"> 
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!-- Sidebar section -->
+                <div class="sidebar">
+                    <img class="sidebar-img" src= "https://data.whicdn.com/images/348011517/original.jpg">
+                </div>
+                <!-- Content section -->
+                <div class="content">
+                    <h2> Tasneem B. </h2>
+                    <p> Student @ LAVCA & NOCCA</P>
+                    <!-- Interests section -->
+                    <div id="interests">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Making Fancy Coffee</li>
+                            <li>Knitting and Other Yarn work</li>
+                            <li>Baking</li>
+                            <li> Listening to Music</li>
+                            <li>Reading Fiction</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
