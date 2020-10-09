@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+         <title>Nemo Cat Café</title>
+         <style>
+            body {
+                background-image: url("https://i.pinimg.com/originals/b3/2e/ab/b32eabe0af24d79737a2a871a146f596.jpg");                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: 'Roboto Mono', monospace;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+                font-family: 'Roboto Mono', monospace;
+                }
+
+            /* navigation menu */
+            nav {
+                background: #333333;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                display: inline-block;
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: 'Noto Serif', serif;
+                font-size: 20px 
+            }
+
+            /* main container area beneath menu */
+            main {
+                
+                display: flex;
+                
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                color:  #b3b3b3; 
+                flex: 1;
+                padding: 15px;
+            }
+           /* portfolio styles */
+            .content h1 {
+                color: #ffffe6;
+            }
+            
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            #portfolio li {
+                background: #ffffe6;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #333333;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Nemo Cat Café</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                    <a class="nav-a" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-li">
+                    <a class="nav-a" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <img src="https://64.media.tumblr.com/2e75bce29366db2538eb21444096ff42/tumblr_pkv8sniqcz1sqtg5co2_r1_400.gifv">
+                <div class="content">
+                    <h1>Portfolio</h1>
+                    <ul id="portfolio">
+                        <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+                        <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+                        <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
