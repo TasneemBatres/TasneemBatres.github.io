@@ -36,12 +36,15 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        // example: 
-        createCollectable(type.steve, 200, 170, 6, 0.7);
+       
+        createCollectable(type.steve, 130, 170, 10, 0.7);
+        createCollectable(type.grace, 20, 100);
+        createCollectable(type.kennedi,  800, 0, 15, 0.8) 
+      
+
         
         
-        
-        // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
+    // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
     collectable.init = init;
