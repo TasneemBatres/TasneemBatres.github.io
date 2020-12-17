@@ -8,13 +8,13 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(94, 54, 8);
 			font-size: 300%;
 			text-align: center;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 200px;  /* <--- Change me! */
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -58,16 +58,25 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
-
-			
+			var positionX = 0; 
+            var points = 0; 
+            var speed = 10;
+		
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
-				
+                positionX = positionX + speed; 
+                moveBoxTo(positionX);
+                if (positionX > boardWidth) {
+                    return speed = - speed;
+                }
+                if (positionX < 0){
+                    return speed = -speed * 1; 
+                }
+                
 
 			};
 
@@ -77,7 +86,16 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+                positionX = 0;
+                points = points + 1;
+                changeBoxText(points);
+                
+                if (speed >= 1){
+                    return speed += 3; 
+                }
+                else if (speed < 1){
+                    return speed = - 3;
+                }
 
 
 			};
